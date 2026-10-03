@@ -1,4 +1,4 @@
-# ConcurrentLab
+# Concurrent Queue Lab
 
 
 ## What it does
