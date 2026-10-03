@@ -1,0 +1,27 @@
+# IDEs and Editors
+.idea/
+.vscode/
+*.swp
+*.user
+
+# Build and Output Directories
+/results/
+build/
+build-*/
+build/**
+cmake-build-*/
+cmake-build-debug/
+cmake-build-release/
+bin/
+lib/
+/results/
+
+# CMake Generated Files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# OS Specific
+.DS_Store
+Thumbs.db
