@@ -4,9 +4,6 @@
 #include "harness/workload_types.hpp"
 #include <thread>
 
-namespace std {
-    class jthread;
-}
 
 namespace lab::harness {
     enum class CpuAffinityPolicy;
