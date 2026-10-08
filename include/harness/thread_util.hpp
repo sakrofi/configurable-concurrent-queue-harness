@@ -4,8 +4,14 @@
 #include "harness/workload_types.hpp"
 #include <thread>
 
+namespace std {
+    class jthread;
+}
+
 namespace lab::harness {
-struct CpuPair {
+    enum class CpuAffinityPolicy;
+
+    struct CpuPair {
     int producer = -1;
     int consumer = -1;
 };

@@ -21,7 +21,9 @@
 #include <vector>
 
 namespace lab::harness {
-using Clock = std::chrono::steady_clock; // elapsed without system-clock jumps
+    struct LatencyStats;
+    enum class MeasurementMode;
+    using Clock = std::chrono::steady_clock; // elapsed without system-clock jumps
 
 struct RunResult {
     std::string queue;

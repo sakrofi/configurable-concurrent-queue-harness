@@ -4,6 +4,9 @@
 *.swp
 *.user
 
+# Personal learning notes and working copies
+/.local-notes/
+
 # Build and Output Directories
 /results/
 build/
@@ -14,7 +17,6 @@ cmake-build-debug/
 cmake-build-release/
 bin/
 lib/
-/results/
 
 # CMake Generated Files
 CMakeCache.txt

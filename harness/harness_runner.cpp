@@ -19,7 +19,7 @@ void validate(const BenchmarkConfig& config, const Workload& workload) {
     }
 }
 
-// Fixed integer computation, not a promise of a fixed nanosecond duration.
+// Fixed integer computation
 std::uint64_t consumer_work(std::uint64_t state, std::size_t iterations) {
     for (std::size_t i = 0; i < iterations; ++i) {
         state ^= state >> 12;

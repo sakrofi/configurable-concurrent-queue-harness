@@ -8,6 +8,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 include(FetchContent)
 
+
 # ==============================================================================
 # 1. DEPENDENCIES
 # ==============================================================================
@@ -98,11 +99,3 @@ add_executable(benchmarks
 target_link_libraries(benchmarks PRIVATE harness_lib)
 
 
-# ==============================================================================
-# 5. MAIN APPLICATION
-# ==============================================================================
-# Ensure src/main.cpp exists before building this target
-if(EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp")
-    add_executable(concurrent_lab src/main.cpp)
-    target_link_libraries(concurrent_lab PRIVATE queue_lib)
-endif()
